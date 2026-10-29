@@ -268,6 +268,8 @@
       <a href="#evenements">Événements</a>
       <a href="#galerie">Galerie</a>
       <a href="#faq">FAQ</a>
+      <a href="#avis">Bugs &amp; idées</a>
+      <a href="https://discord.gg/MTDWdGJYQz" target="_blank" rel="noopener">Discord</a>
     </nav>
     <a class="nav-dl dl-link" href="#installer">Télécharger</a>
     <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
@@ -299,6 +301,7 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
         Copier l'adresse
       </button>
+      <a class="btn btn-ghost" href="https://discord.gg/MTDWdGJYQz" target="_blank" rel="noopener">Rejoindre le Discord</a>
     </div>
     <div class="dl-info">Windows 10 / 11 · version <span class="v-version"></span> · <span class="v-size"></span></div>
     <div class="status" id="status"><span class="dot"></span><span class="txt">Connexion au serveur…</span></div>
@@ -408,7 +411,7 @@
       <div class="rule reveal d2"><b>⚔ PvP et raids</b>Autorisés hors de la cité, entre factions.</div>
       <div class="rule reveal"><b>🏰 Cité protégée</b>Pas de PvP dans la cité, sauf dans l'arène.</div>
       <div class="rule reveal d1"><b>👤 Un compte</b>Un seul compte par joueur.</div>
-      <div class="rule reveal d2"><b>🛡 Modération</b>Un souci ? Demande à un modérateur en jeu.</div>
+      <div class="rule reveal d2"><b>🛡 Modération</b>Un souci ? Demande à un modérateur en jeu ou sur le Discord.</div>
     </div>
 
     <h2 class="reveal" style="margin-top:72px">Questions</h2>
@@ -425,9 +428,25 @@
         <p>Le chat vocal de proximité est inclus : maintiens la touche V pour parler aux joueurs autour de toi.</p></details>
       <details class="reveal"><summary>Les grades VIP sont payants ?</summary>
         <p>Non. VIP et Héros s'achètent uniquement avec l'argent gagné en jeu, et ne donnent aucun avantage en combat.</p></details>
+      <details class="reveal"><summary>Comment signaler un bug ou proposer une idée ?</summary>
+        <p>Dans le launcher, onglet « Bugs &amp; idées » (ton message part tout seul à ta prochaine connexion), en jeu avec <code>/bug ton message</code> ou <code>/idee ton message</code>, ou sur le Discord. Tout arrive chez l'équipe du serveur.</p></details>
       <details class="reveal"><summary>Quelle est l'adresse du serveur ?</summary>
         <p>Le launcher te connecte tout seul. Adresse : <code class="v-server"></code></p></details>
     </div>
+  </div>
+</section>
+
+<section id="avis">
+  <div class="wrap">
+    <span class="kicker reveal">Ton avis compte</span>
+    <h2 class="reveal">Un bug ? Une idée ?</h2>
+    <p class="lead reveal">Quelque chose ne marche pas, ou tu aimerais voir un ajout (dans le jeu, la cité, le launcher ou ce site) ? Dis-le, l'équipe lit tout.</p>
+    <div class="rules">
+      <div class="rule reveal"><b>🖥 Dans le launcher</b>Onglet « Bugs &amp; idées » : écris ton message, il part tout seul à ta prochaine connexion au serveur.</div>
+      <div class="rule reveal d1"><b>⌨ En jeu</b>Tape <code>/bug ton message</code> ou <code>/idee ton message</code> : c'est envoyé tout de suite.</div>
+      <div class="rule reveal d2"><b>💬 Sur Discord</b>Salon <b style="display:inline">🐞・bugs-et-idées</b> pour en parler avec tout le monde.</div>
+    </div>
+    <div class="cta reveal" style="margin-top:28px"><a class="btn btn-ghost" href="https://discord.gg/MTDWdGJYQz" target="_blank" rel="noopener">Rejoindre le Discord</a></div>
   </div>
 </section>
 
@@ -436,13 +455,13 @@
     <span class="kicker reveal">On t'attend</span>
     <h2 class="reveal">Prêt à rejoindre Sicium ?</h2>
     <p class="lead reveal" style="margin:0 auto">Fonde ta faction, prends les avant-postes et grimpe au classement.</p>
-    <div class="cta reveal"><a class="btn btn-main dl-link" href="#installer">Télécharger le launcher</a></div>
+    <div class="cta reveal"><a class="btn btn-main dl-link" href="#installer">Télécharger le launcher</a><a class="btn btn-ghost" href="https://discord.gg/MTDWdGJYQz" target="_blank" rel="noopener">Rejoindre le Discord</a></div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <span>Sicium · serveur Minecraft Faction</span>
+    <span>Sicium · serveur Minecraft Faction · <a href="https://discord.gg/MTDWdGJYQz" target="_blank" rel="noopener">Discord</a></span>
     <span>Non affilié à Mojang ni à Microsoft.</span>
   </div>
 </footer>
@@ -460,10 +479,10 @@
 //  Réglages : à mettre à jour à chaque nouvelle version du launcher
 // ---------------------------------------------------------------------------
 const SITE = {
-  version: '2.2.0',
+  version: '2.3.0',
   size: '116 Mo',
   download: 'https://github.com/OcZ13-blip/sicium/releases/latest/download/Sicium-Launcher-Setup.exe',
-  sha256: '95d494c08186217aeb5a2dbd387c58ebbd9d360a66d33e254334456aa9f5b57e',
+  sha256: '4af6229feda880213edb3fc0ae7a49164ebbafb0d21b8a549403714f1694eb8b',
   server: '91.197.6.226:27767'
 };
 
