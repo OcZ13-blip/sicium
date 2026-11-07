@@ -334,9 +334,11 @@
       <img class="reveal" src="img/launcher.jpg" alt="Le launcher Sicium : actualités, état du serveur et bouton JOUER" loading="lazy" width="1120" height="700">
       <div class="reveal d1">
         <h3>Le launcher</h3>
-        <p class="muted">Tout est au même endroit : les actualités, le compte à rebours du prochain rendez-vous, l'état du serveur (avec les joueurs connectés au survol), les shaders, ton skin en 3D (visible par tous en jeu) et l'onglet Bugs et idées.</p>
+        <p class="muted">Tout est au même endroit : les actualités, le compte à rebours du prochain rendez-vous, l'état du serveur (avec les joueurs connectés au survol), les shaders, ton skin en 3D (visible par tous en jeu), tes captures d'écran et l'onglet Bugs et idées.</p>
         <ul>
-          <li>Mods, pack de textures et réglages installés tout seuls.</li>
+          <li>Mods, pack de textures et réglages installés tout seuls. Un clic choisit le profil PC faible, moyen ou puissant.</li>
+          <li>Si le jeu plante, le launcher explique pourquoi avec des mots simples et propose de corriger.</li>
+          <li>Une notification te prévient 10 minutes avant chaque événement.</li>
           <li>Quand une nouvelle version sort, le bouton JOUER devient « Mettre à jour » : un clic, le launcher redémarre, et c'est prêt.</li>
           <li>Les mods en trop sont retirés au lancement : tout le monde joue à armes égales.</li>
         </ul>
@@ -493,10 +495,10 @@
 //  Réglages : à mettre à jour à chaque nouvelle version du launcher
 // ---------------------------------------------------------------------------
 const SITE = {
-  version: '2.7.0',
+  version: '2.8.0',
   size: '118 Mo',
   download: 'https://github.com/OcZ13-blip/sicium/releases/latest/download/Sicium-Launcher-Setup.exe',
-  sha256: '4d7523e85272e7287c452933f89304362ecf9a484dfe33f0354b4be89ec25300',
+  sha256: 'cfa936539be6797ebc850932ca21c6f886eea9381099b97a20e5146be00bd2c6',
   server: '91.197.6.226:27767'
 };
 
@@ -516,7 +518,7 @@ const SHOWCASE = [
     text: 'Le cœur du serveur : un château aux toits d\'ardoise, entouré de remparts, de douves et de quartiers vivants. Un vrai sanctuaire : personne n\'y prend de dégâts, et il y fait toujours beau, toujours jour.',
     list: ['Banque : ton épargne rapporte 1 % par jour', 'Contrats du jour à la Maison des métiers', 'Forge : réparation et stuff renforcé', 'Tour du défi : un parkour, 250 $ par jour'] },
   { icon: 'img/icons/sword.png', tab: 'Factions', img: 'img/menu-faction.jpg', title: 'Factions et banque commune',
-    text: 'Crée ta faction, revendique tes terres, protège ta base ou pille celle des autres. Chaque membre remplit la banque commune.',
+    text: 'Crée ta faction, revendique tes terres, protège ta base ou pille celle des autres. Chaque membre remplit la banque commune. Quand personne de ta faction n\'est connecté, ta base ne craint pas les explosions.',
     list: ['Jusqu\'à 8 membres', 'Terres, alliances et raids', 'Améliorations : plus de terres, Célérité, Vitesse', 'Classement des factions'] },
   { icon: 'img/icons/chestplate.png', tab: 'Avant-postes', img: 'img/avant-poste.jpg', title: 'Trois avant-postes à conquérir',
     text: 'Reste seul avec ta faction 60 secondes dans le cercle pour capturer un avant-poste. Garde-le : il verse 300 $ par heure dans ta banque.',
@@ -527,6 +529,9 @@ const SHOWCASE = [
   { icon: 'img/icons/parchemin.png', tab: 'Quêtes', img: 'img/menu-quetes.jpg', title: 'Quêtes et métiers',
     text: 'Trois nouvelles quêtes chaque jour, payées dès qu\'elles sont finies. Monte tes métiers et forge du Sicium, plus solide que la netherite.',
     list: ['13 quêtes différentes', 'Bonus quand les 3 sont finies', '10 métiers avec niveaux', 'Sicium : pierre noire et lave'] },
+  { icon: 'img/icons/fragment.png', tab: 'Saison', img: 'img/menu-saison.jpg', title: 'Passe de saison, succès et capes',
+    text: 'Tout ce que tu fais sur Sicium fait monter ton passe de saison : 30 paliers gratuits, chacun avec sa récompense. Débloque des succès pour gagner des titres, et des capes que tout le monde voit.',
+    list: ['30 paliers gratuits, récompense à chaque palier', '31 succès, chacun devient un titre', '5 capes : Pionnier, VIP, Héros, Champion, Légende', 'Les nouveaux sont guidés pas à pas, et le parrainage récompense ceux qui font venir leurs amis'] },
   { icon: 'img/icons/helmet.png', tab: 'Grades VIP', img: 'img/menu-vip.jpg', title: 'VIP et Héros, sans argent réel',
     text: 'Les grades s\'achètent uniquement avec l\'argent gagné en jeu. Ils ne donnent aucun avantage en combat.',
     list: ['Préfixe dans la liste des joueurs', 'Kit chaque semaine', 'Quêtes mieux payées', 'Remise chez le marchand'] }
@@ -538,6 +543,7 @@ const GALLERY = [
   ['img/cite-crepuscule.jpg', 'Le donjon au soleil couchant'], ['img/bg-city.jpg', 'La cité vue du ciel'],
   ['img/avant-poste.jpg', 'Un avant-poste capturé'],
   ['img/menu-accueil.jpg', 'Le menu du jeu (touche N) : l\'accueil'], ['img/menu-evenements.jpg', 'Le menu du jeu : les événements de la semaine'],
+  ['img/menu-saison.jpg', 'Le menu du jeu : le passe de saison'],
   ['img/launcher.jpg', 'Le launcher Sicium']
 ];
 
